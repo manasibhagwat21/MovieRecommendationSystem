@@ -1,0 +1,51 @@
+{% extends 'recommend/base.html'%}
+{% block body %}
+
+{% if request.user.is_authenticated %}
+    <center style="color:#630000;"><h2>Hello {{user.username}}!</h2></center>
+{% endif %}
+
+<h2 class='tle'>Browse Movies</h2>
+
+<div class="container">
+    <div class="col-xs-6 col-xs-offset-3">
+    	<form class="form-horizontal" role="search" method="get" action=''>
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control input-lg " name="q" value="{{ request.GET.q }}" placeholder= "Search Movies "/>
+                    <span class='input-group-btn'>
+                        <button class='searchButton' type='submit'>Search</button>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+ </div>
+
+<div class='row'>
+    <div class='col-md-10'><hr></div>
+    <a class='col-md-2'href="{% url 'recommend' %}"><button class="btn recBtn">Get Movie Recommendation</button></a>
+</div>
+<hr>
+<br>
+
+<!-- Movie list -->
+    <div class="row" >
+            {% if movies %}
+            {% for movie in movies %}
+            <div class="col-sm-2 col-md-2 ">
+                <div class="movieThumbnail">
+                    <center><h4>{{movie.title}}</h4></center>
+                    <a href="{% url 'detail' movie.id %}">
+                        <div style="text-align: center;"><img src="{{ movie.movie_logo.url}}" class="img-responsive"></div>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+</div>
+
+
+{% endblock %}

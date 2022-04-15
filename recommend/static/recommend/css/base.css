@@ -1,0 +1,140 @@
+/* Header and Footer */
+.navbar{
+	min-height: 80px;
+}
+.container-fluid{
+	margin-top:1.5% ;
+}
+.navbar-nav>li>a{
+	font-size: 18px;
+}
+.navbar-brand{
+	font-size: 22px;
+	font-weight: 700;
+}
+.footer {
+    background-color:#630000;
+    text-align: center;
+}
+.follow h3 {
+    color: #fff;
+    font-size:250%;
+    padding-bottom: 25px;
+}
+.follow ul li {
+    display: inline-block;
+    margin : 0 4px;
+}
+.follow ul li a {
+    color: #252525;
+    background: #fff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 110px;
+    font-size: 27px;
+    text-decoration:none;
+    padding: 0%;
+    margin-right:30px;
+}
+.follow ul li a:hover {
+    color: #630000;
+}
+.copyright {
+    background: #0f0f0f;
+    text-align: center;
+}
+.copyright p {
+    color: #fff;
+    font-size:120%;
+}
+
+/* Buttons */
+.searchButton {
+	background-color: #630000;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: -4px -4px;
+	cursor: pointer;
+	margin-left:4px;
+}
+.btn1 {
+	background-color: #630000;
+	border: none;
+	color: white;
+	padding:6%;
+	font-size: large;
+	width: 100%;
+	margin-top:5%;
+}
+.recBtn {
+	background-color: #630000;
+	border: none;
+	color: white;
+	padding:5%;
+	font-size: 120%;
+}
+.btnSub{
+	background-color: #630000;
+	border: none;
+	color: white;
+	font-size: 120%;
+}
+
+/* Rating Stars */
+.star-rating {
+	line-height:32px;
+	font-size:1.25em;
+	margin-left:-33px;
+	color:#630000
+}
+.star-rating .fa-star{
+color: yellow;
+}
+
+/* Movie thumbnails */
+.thumbnail p, .thumbnail h4 {
+	white-space: nowrap;
+	overflow: hidden;
+}
+.movieThumbnail{
+	text-align: center;
+	color:#fff;
+	background-color: #630000;
+	padding:2%;
+	margin:0 0 10% 0;
+}
+.movieThumbnail img{
+	margin: auto;
+}
+
+/* Movie details */
+.detImg{
+	width:80%;
+}
+
+.tle{
+	text-align: center;
+	color:#630000;
+	font-weight: bold;
+	font-size: 350%;
+	
+}
+
+/* SignUp and Login */
+.panels{
+	background-color:#EEEBDD;
+	color:#000;
+	border:1px solid #630000;
+}
+.pIn{
+	padding:10%;
+}
